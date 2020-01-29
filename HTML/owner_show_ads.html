@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- To Add Icon -->
+		<link rel="stylesheet" href="../icon/fontawesome_icon/css/all.css" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="../CSS/style.css" />
+		<title>Show Ads</title>
+	</head>
+	<body>
+		<header id="header">
+			<div class="container">
+				<div id="website_logo">
+					<a href="owner_homepage.html">
+						<img
+							src="../images/website_logo.png"
+							alt="Student Accommodation"
+							width="250px"
+							height="70px"
+							id="logo"
+						/>
+					</a>
+				</div>
+				<div id="header_navigation">
+					<nav id="header_nav">
+						<ul>
+							<span id="header_nav_list">
+								<li>
+									<a href="owner_homepage.html">Home</a>
+								</li>
+								<li id="separator"><b>|</b></li>
+								<li>
+									<a href="my_advertise.html" class="current">My Ads</a>
+								</li>
+								<li id="separator"><b>|</b></li>
+								<li>
+									<a href="owner_profile.html">Dashboard</a>
+								</li>
+							</span>
+							<span id="header_logout">
+								<li>
+									<a href="index.html">
+										<i class="fas fa-sign-out-alt fa-lg"></i>
+									</a>
+									<!-- <a href="#">
+          <i class="fas fa-user-circle fa-2x"></i>
+         </a>
+        </li> -->
+								</li>
+							</span>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="filter_section">
+			<div class="container">
+				<div class="filtering">
+					<form action="" method="POST">
+						<input
+							type="text"
+							name="search_title"
+							id="search_title"
+							class="search_title"
+							placeholder="Search by Title..."
+						/>
+						<label for="" class="search_area_label label">Area : </label>
+						<select
+							name="search_area"
+							id="search_area"
+							class="search_area search_combo"
+						>
+							<option value="all" selected>All</option>
+							<option value="mirpur">Mirpur</option>
+							<option value="dhanmondi">Dhanmondi</option>
+							<option value="uttora">Uttora</option>
+						</select>
+						<label for="" class="search_ads_type_label label">Ads Type : </label>
+						<select
+							name="search_ads_type"
+							id="search_ads_type"
+							class="search_ads_type search_combo"
+						>
+							<option value="all" selected>All</option>
+							<option value="flat">Flat</option>
+							<option value="mess">Mess</option>
+							<option value="sublet">Sublet</option>
+						</select>
+						<button type="submit" class="btn details">Apply Filter</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="showads_section">
+			<div class="container">
+				<div class="showads">
+					<div id="showads">
+						<fieldset>
+							<div class="ads_image">
+								<img
+									src="../images/image2.jpg"
+									alt="ads image"
+									width="150px"
+									height="150px"
+								/>
+							</div>
+							<div class="ads_details">
+								<div class="ads_details_text">
+									<label class="ads_details_text_label"
+										><a href="" class="title">Title: asdasdasd</a>
+									</label>
+									<br />
+									<label class="ads_details_text_label">Area: asdasdasd</label>
+									<br />
+									<label class="ads_details_text_label">Gender: asdasdasd</label>
+									<br />
+									<label class="ads_details_text_label">Price: asdasdasd</label>
+								</div>
+								<div class="ads_details_btn">
+									<form action="" method="post" class="details_btn">
+										<button class="btn details">View Details</button>
+									</form>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="pagination_section">
+			<div class="container">
+				<div class="center">
+					<div class="pagination">
+						<a href="#">&laquo;</a>
+						<a href="#">1</a>
+						<a href="#" class="active">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">&raquo;</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="boxes_footer_top">
+			<div class="container">
+				<div class="box_footer_top">
+					<div>
+						<h3>USEFUL LINKS</h3>
+						<div class="bottom-menu">
+							<ul>
+								<li><a href="aboutus.html">About Us</a></li>
+								<li>
+									<a href="termscondition.html">Terms &amp; Conditions</a>
+								</li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li>
+									<a href="contactus.html">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="box_footer_top">
+					<div>
+						<h3>STAY IN TOUCH</h3>
+						<div>
+							<form>
+								<div>
+									<textarea
+										name="feedback_msg"
+										id="feedback_msg"
+										cols="30"
+										rows="5"
+										placeholder="Your Message..."
+										style="font-size: 15px;"
+										required
+									></textarea>
+									<input
+										type="email"
+										name="feedback_email"
+										id="feedback_email"
+										placeholder="E-mail ... "
+										required
+									/>
+									<button type="submit" name="feedback_button" id="feedback_button">
+										<!-- <i class="fa fa-search fa-sm"></i> -->
+										Feedback
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="social">
+							<ul>
+								<li>
+									<a href="#" target="_blank">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank"><i class="fab fa-google-plus-g"></i> </a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="box_footer_top">
+					<div>
+						<h3>OFFICE ADDRESS</h3>
+						<div>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<strong>Administration Office</strong><br />
+							<p style="margin-top:5px;">
+								Block A, 1st Floor, Mirpur 12,<br />
+								Dhaka, Bangladesh.
+							</p>
+
+							<i class="fa fa-phone"></i>
+							<label>+88 01714452058</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<p>
+					Copyright &copy; 2019 | All Rights Reserved by Student Accommodation
+				</p>
+			</div>
+		</footer>
+		<script src="../JavaScript/header.js"></script>
+	</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- To Add Icon -->
+		<link rel="stylesheet" href="../icon/fontawesome_icon/css/all.css" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="../CSS/style.css" />
+		<title>Student Accommodation | Log In</title>
+	</head>
+	<body>
+		<header id="header">
+			<div class="container">
+				<div id="website_logo">
+					<a href="index.html">
+						<img
+							src="../images/website_logo.png"
+							alt="Student Accommodation"
+							width="250px"
+							height="70px"
+							id="logo"
+						/>
+					</a>
+				</div>
+				<!-- <nav id="header_nav">
+          <ul>
+           <span id="header_nav_list">
+            <li class="current"><a href="index.html">Login</a></li>
+            <li id="separator"><b>|</b></li>
+            <li>
+             <a href="registration.html">Create an Account</a>
+            </li>
+           </span>
+          </ul>
+         </nav> -->
+			</div>
+		</header>
+
+		<section class="admin_login">
+			<div class="container">
+				<div class="admin_form">
+					<input id="tab_1" type="radio" name="tab" class="sign_in" checked />
+					<label for="tab_1" id="tab_1_label" class="tab" onclick="tab1Clicked()"
+						>Sign In</label
+					>
+					<input id="tab_2" type="radio" name="tab" class="sign_up" />
+					<label for="tab_2" id="tab_2_label" class="tab" onclick="tab2Clicked()"
+						>Sign Up</label
+					>
+
+					<div class="login_signup_form" id="login_signup_form">
+						<div class="login_form">
+							<h2><u>Admin Login</u></h2>
+							<form action="admin_login.php" method="POST" autocomplete="off">
+								<div class="inputBox">
+									<input type="text" name="username" required autocomplete="off" />
+									<label>Username</label>
+								</div>
+								<div class="inputBox">
+									<input
+										type="password"
+										name="user_password"
+										required
+										autocomplete="off"
+									/>
+									<label>Password</label>
+								</div>
+								<button
+									type="submit"
+									name="login_button"
+									class="btn admin_login_button"
+								>
+									Login
+								</button>
+								<!-- <input type="submit" name="login_button" value="Login" /> -->
+							</form>
+						</div>
+						<div class="signup_form">
+							<h2><u>Admin Signup</u></h2>
+							<form>
+								<div class="inputBox">
+									<input type="text" name="" required="" />
+									<label>Username</label>
+								</div>
+								<div class="inputBox">
+									<input type="password" name="" required="" />
+									<label>Password</label>
+								</div>
+								<div class="inputBox">
+									<input type="text" name="" required="" />
+									<label>Username</label>
+								</div>
+								<div class="inputBox">
+									<input type="password" name="" required="" />
+									<label>Password</label>
+								</div>
+								<button
+									type="submit"
+									name="login_button"
+									class="btn admin_login_button"
+								>
+									Login
+								</button>
+								<!-- <input type="submit" name="" value="Login" /> -->
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<p>
+					Copyright &copy; 2019 | All Rights Reserved by Student Accommodation
+				</p>
+			</div>
+		</footer>
+
+		<script>
+			function tab1Clicked() {
+				document.getElementById("login_signup_form").style.height = "235px";
+			}
+
+			function tab2Clicked() {
+				document.getElementById("login_signup_form").style.height = "370px";
+			}
+		</script>
+
+		<!-- <script src="../JavaScript/header.js"></script> -->
+	</body>
+</html>

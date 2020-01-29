@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- To Add Icon -->
+  <link rel="stylesheet" href="../icon/fontawesome_icon/css/all.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <title>Student Accommodation | Sign Up</title>
+ </head>
+
+ <body>
+  <header id="header">
+   <div class="container">
+    <div id="website_logo">
+     <a href="index.php">
+      <img
+       src="../images/website_logo.png"
+       alt="Student Accommodation"
+       width="250px"
+       height="70px"
+       id="logo"
+      />
+     </a>
+    </div>
+    <nav id="header_nav">
+     <ul>
+      <span id="header_nav_list">
+       <li><a href="index.php">Login</a></li>
+       <li id="separator"><b>|</b></li>
+       <li class="current">
+        <a href="registration.php">Create an Account</a>
+       </li>
+      </span>
+     </ul>
+    </nav>
+   </div>
+  </header>
+
+  <section id="registration_section">
+   <div class="container">
+    <div class="registration_form">
+     <form action="#" method="GET">
+      <table align="center">
+       <tr>
+        <td>
+         <h2>User Registration</h2>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <label for="user_type" class="label">
+          Sign Up As <span class="required">*</span>
+         </label>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <select name="user_type" id="user_type" class="user_info" required>
+          <option value="" disabled selected>User Type</option>
+          <option value="student">Student</option>
+          <option value="owner">House Owner</option>
+         </select>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <label for="user_full_name" class="label">
+          Name <span class="required">*</span>
+         </label>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <input
+          type="text"
+          name="user_full_name"
+          id="user_full_name"
+          placeholder="Type Your Full Name"
+          class="user_info"
+          required
+         />
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <label for="username" class="label">
+          Userame <span class="required">*</span>
+         </label>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Userame"
+          class="user_info"
+          required
+         />
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <label for="user_email" class="label">
+          E-mail <span class="required">*</span>
+         </label>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <input
+          type="email"
+          name="user_email"
+          id="user_email"
+          placeholder="Enter Your Valid E-mail"
+          class="user_info"
+          required
+         />
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <label for="user_password" class="label">
+          Password <span class="required">*</span>
+         </label>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <input
+          type="password"
+          name="user_password"
+          id="user_password"
+          placeholder="Password"
+          class="user_info"
+          required
+         />
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <label for="confirm_user_password" class="label">
+          Confirm Password <span class="required">*</span>
+         </label>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <input
+          type="password"
+          name="confirm_user_password"
+          id="confirm_user_password"
+          placeholder="Confirm Password"
+          class="user_info"
+          required
+         />
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <input
+          type="checkbox"
+          name="accept_terms"
+          id="accept_terms"
+          required
+         />
+         <label for="accept_terms" id="accept_terms_label">
+          By clicking registration button, you accept our</label
+         >
+         <a href="termscondition.php" target="_blank" id="checkbox_label"
+          >Terms & Conditions.</a
+         >
+        </td>
+       </tr>
+       <tr>
+        <td align="center">
+         <button
+          type="submit"
+          name="registration_button"
+          id="registration_button"
+         >
+          Register
+         </button>
+        </td>
+       </tr>
+      </table>
+     </form>
+    </div>
+   </div>
+  </section>
+
+  <section id="boxes_footer_top">
+   <div class="container">
+    <div class="box_footer_top">
+     <div>
+      <h3>USEFUL LINKS</h3>
+      <div class="bottom-menu">
+       <ul>
+        <li><a href="aboutus.php">About Us</a></li>
+        <li>
+         <a href="termscondition.php">Terms &amp; Conditions</a>
+        </li>
+        <li><a href="faq.php">FAQ</a></li>
+        <li>
+         <a href="contactus.php">Contact Us</a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+
+    <div class="box_footer_top">
+     <div>
+      <h3>STAY IN TOUCH</h3>
+      <div>
+       <form>
+        <div>
+         <textarea
+          name="feedback_msg"
+          id="feedback_msg"
+          cols="30"
+          rows="5"
+          placeholder="Your Message..."
+          style="font-size: 15px;"
+          required
+         ></textarea>
+         <input
+          type="email"
+          name="feedback_email"
+          id="feedback_email"
+          placeholder="E-mail ... "
+          required
+         />
+         <button type="submit" name="feedback_button" id="feedback_button">
+          <!-- <i class="fa fa-search fa-sm"></i> -->
+          Feedback
+         </button>
+        </div>
+       </form>
+      </div>
+      <div class="social">
+       <ul>
+        <li>
+         <a href="#" target="_blank">
+          <i class="fab fa-twitter"></i>
+         </a>
+        </li>
+        <li>
+         <a href="#" target="_blank">
+          <i class="fab fa-facebook"></i>
+         </a>
+        </li>
+        <li>
+         <a href="#" target="_blank"><i class="fab fa-google-plus-g"></i> </a>
+        </li>
+        <li>
+         <a href="#" target="_blank">
+          <i class="fab fa-instagram"></i>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div class="box_footer_top">
+     <div>
+      <h3>OFFICE ADDRESS</h3>
+      <div>
+       <i class="fa fa-map-marker" aria-hidden="true"></i>
+       <strong>Administration Office</strong><br />
+       <p style="margin-top:5px;">
+        Block A, 1st Floor, Mirpur 12,<br />
+        Dhaka, Bangladesh.
+       </p>
+
+       <i class="fa fa-phone"></i>
+       <label>+88 01714452058</label>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <footer>
+   <div class="container">
+    <p>
+     Copyright &copy; 2019 | All Rights Reserved by Student Accommodation
+    </p>
+   </div>
+  </footer>
+  <script src="../JavaScript/header.js"></script>
+ </body>
+</html>

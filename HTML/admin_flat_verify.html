@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- To Add Icon -->
+		<link rel="stylesheet" href="../icon/fontawesome_icon/css/all.css" />
+		<!-- CSS -->
+		<!-- <link rel="stylesheet" href="../CSS/style.css" /> -->
+		<link rel="stylesheet" href="../CSS/style.css" />
+		<!-- Ajax -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<title>Flat Verify</title>
+	</head>
+	<body>
+		<header id="header">
+			<div class="container">
+				<div id="website_logo">
+					<a href="owner_homepage.html">
+						<img
+							src="../images/website_logo.png"
+							alt="Student Accommodation"
+							width="250px"
+							height="70px"
+							id="logo"
+						/>
+					</a>
+				</div>
+				<div id="header_navigation">
+					<nav id="header_nav">
+						<ul>
+							<span id="header_nav_list">
+								<li class="current">
+									<a href="admin.html">Home</a>
+								</li>
+								<li id="separator"><b>|</b></li>
+
+								<li>
+									<a href="admin_profile.html">Dashboard</a>
+								</li>
+							</span>
+							<span id="header_logout">
+								<li>
+									<a href="index.html">
+										<i class="fas fa-sign-out-alt fa-lg"></i>
+									</a>
+									<!-- <a href="#">
+         <i class="fas fa-user-circle fa-2x"></i>
+        </a>
+       </li> -->
+								</li>
+							</span>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="flat_verify_section">
+			<div class="container">
+				<div class="verify_details">
+					<div class="left_section">
+						<div>
+							<h1>Flat Details</h1>
+						</div>
+						<div id="left_section_information">
+							<div class="left_section_information">
+								<table class="left_section_table">
+									<tr>
+										<td align="right" class="label"><span>Title : </span></td>
+										<td align="left" class="show_data"><span id="title"></span></td>
+									</tr>
+									<tr>
+										<td align="center" colspan="2">
+											<div class="full_image">
+												<img
+													src="../images/image5.jpg"
+													alt="ads image"
+													class="main_full_image"
+												/>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" colspan="2">
+											<div class="small_images">
+												<div class="small_image">
+													<img src="../images/image1.jpg" alt="ads image" class="images" />
+												</div>
+												<div class="small_image">
+													<img src="../images/image3.jpg" alt="ads image" class="images" />
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>Available From : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>Ads For : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>Size : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>No. of Bedroom : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>No. of Corridor : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>No. of Bathroom : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>Special Facility : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>Rent : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>Rent Type : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>Address : </span></td>
+										<td align="left" class="show_data"><address></address></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>City : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>Area : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>Details : </span></td>
+										<td align="left" class="show_data"><address></address></td>
+									</tr>
+									<tr>
+										<td align="center" colspan="2" class="label">
+											<h2><u>Contact Information</u></h2>
+										</td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>Name : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>Phone : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+									<tr>
+										<td align="right" class="label"><span>E-mail : </span></td>
+										<td align="left" class="show_data"><span></span></td>
+									</tr>
+								</table>
+							</div>
+							<div class="left_section_button">
+								<button name="approve" class="btn approve_btn">Approve</button>
+								<button name="disapprove" class="btn disapprove_btn">
+									Disapprove
+								</button>
+								<button name="delete" class="btn delete_btn">Delete</button>
+							</div>
+						</div>
+					</div>
+					<div class="right_section">
+						<div class="right_section_button">
+							<button name="all" class="btn all_btn">All</button>
+							<button name="verified" class="btn verified_btn">Verified</button>
+							<button name="unverified" class="btn unverified_btn">Unverified</button>
+							<button name="deleted" class="btn delete_btn">Deleted</button>
+						</div>
+						<div class="right_section_information">
+							<table class="right_section_table" id="right_section_table">
+								<thead>
+									<tr>
+										<th class="ads_id">Flat ID</th>
+										<th class="ads_title">Title</th>
+										<th class="ads_status">Status</th>
+										<th class="ads_state">State</th>
+									</tr>
+								</thead>
+								<!-- Ajaira data -->
+								<tr>
+									<td class="ads_id">Flat ID1</td>
+									<td class="ads_title">Title1</td>
+									<td class="ads_status">Status1</td>
+									<td class="ads_state">State1</td>
+								</tr>
+								<tr>
+									<td>Flat ID2</td>
+									<td>Title2</td>
+									<td>Status2</td>
+									<td>State2</td>
+								</tr>
+								<tr>
+									<td>Flat ID3</td>
+									<td>Title3</td>
+									<td>Status3</td>
+									<td>State3</td>
+								</tr>
+								<tr>
+									<td>Flat ID4</td>
+									<td>Title4</td>
+									<td>Status4</td>
+									<td>State4</td>
+								</tr>
+								<tr>
+									<td>Flat ID5</td>
+									<td>Title5</td>
+									<td>Status5</td>
+									<td>State5</td>
+								</tr>
+								<tr>
+									<td>Flat ID6</td>
+									<td>Title6</td>
+									<td>Status6</td>
+									<td>State6</td>
+								</tr>
+								<!-- ajaira data end -->
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<p>
+					Copyright &copy; 2019 | All Rights Reserved by Student Accommodation
+				</p>
+			</div>
+		</footer>
+
+		<script src="../JavaScript/header.js"></script>
+		<script>
+			var table = document.getElementById("right_section_table");
+
+			for (var i = 1; i < table.rows.length; i++) {
+				table.rows[i].onclick = function() {
+					//rIndex = this.rowIndex;
+					document.getElementById("title").value = this.cells[0].innerHTML;
+					alert(document.getElementById("title").value);
+				};
+			}
+		</script>
+		<script>
+			function selectedRow() {
+				var index,
+					table = document.getElementById("right_section_table");
+
+				for (var i = 1; i < table.rows.length; i++) {
+					table.rows[i].onclick = function() {
+						// remove the background from the previous selected row
+						if (typeof index !== "undefined") {
+							table.rows[index].classList.toggle("selected");
+						}
+						console.log(typeof index);
+						// get the selected row index
+						index = this.rowIndex;
+						// add class selected to the row
+						this.classList.toggle("selected");
+						console.log(typeof index);
+					};
+				}
+			}
+			selectedRow();
+		</script>
+	</body>
+</html>

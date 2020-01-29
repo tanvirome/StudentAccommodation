@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- To Add Icon -->
+		<link rel="stylesheet" href="../icon/fontawesome_icon/css/all.css" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="../CSS/style.css" />
+		<title>Mess Ads</title>
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="container">
+				<div id="website_logo">
+					<a href="owner_homepage.html">
+						<img
+							src="../images/website_logo.png"
+							alt="Student Accommodation"
+							width="250px"
+							height="70px"
+							id="logo"
+						/>
+					</a>
+				</div>
+				<div id="header_navigation">
+					<nav id="header_nav">
+						<ul>
+							<span id="header_nav_list">
+								<li>
+									<a href="owner_homepage.html">Home</a>
+								</li>
+								<li id="separator"><b>|</b></li>
+								<li>
+									<a href="my_advertise.html">My Ads</a>
+								</li>
+								<li id="separator"><b>|</b></li>
+								<li>
+									<a href="owner_profile.html">Dashboard</a>
+								</li>
+							</span>
+							<span id="header_logout">
+								<li>
+									<a href="index.html">
+										<i class="fas fa-sign-out-alt fa-lg"></i>
+									</a>
+									<!-- <a href="#">
+          <i class="fas fa-user-circle fa-2x"></i>
+         </a>
+        </li> -->
+								</li>
+							</span>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section id="ad_section">
+			<div class="container">
+				<div class="post_ads_information">
+					<form action="owner_homepage.html" method="POST">
+						<div>
+							<h1 align="center">Post Your AD</h1>
+							<table align="center">
+								<tr>
+									<td align="right">
+										<label for="title">
+											<b>Title: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<input
+											type="text"
+											name="title"
+											id="title"
+											value=""
+											placeholder="Title..."
+											style="width: 80%;"
+											class="ads_input"
+											required
+										/>
+									</td>
+								</tr>
+
+								<tr>
+									<td align="right">
+										<label for="photo">
+											<b>Photos: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<input
+											type="file"
+											name="photo"
+											accept="image/*"
+											multiple
+											class="ads_input"
+											required
+										/>
+									</td>
+								</tr>
+
+								<tr>
+									<td align="right">
+										<label for="date">
+											<b>Available From: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<input
+											type="date"
+											name="date"
+											id="date"
+											min="2019-09-30"
+											max="2050-12-31"
+											style="width: 150px;"
+											class="ads_input"
+											required
+										/>
+									</td>
+								</tr>
+
+								<tr>
+									<td align="right">
+										<label for="ads_for">
+											<b>ADs For: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<select
+											name="ads_for"
+											id="ads_for"
+											class="ads_input"
+											style="width: 160px; height: 32px;"
+											required
+										>
+											<option value="" selected disabled> Select gender...</option>
+											<option value="male">Male</option>
+											<option value="female">Female</option>
+										</select>
+									</td>
+								</tr>
+
+								<tr>
+									<td align="right">
+										<label for="rent">
+											<b>Rent: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<input
+											type="number"
+											name="rent"
+											id="rent"
+											value=""
+											style="width: 100px;"
+											placeholder="Rent..."
+											class="ads_input"
+											min="0"
+											required
+										/>
+										<input type="radio" name="rent_type" value="Fixed" checked /> Fixed
+										<input type="radio" name="rent_type" value="Negotiable" /> Negotiable
+									</td>
+								</tr>
+
+								<tr>
+									<td align="right" style="vertical-align: top;">
+										<label for="address">
+											<b>Address: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<textarea
+											name="address"
+											id="address"
+											cols="80"
+											rows="6"
+											style="width: 80%; font-size: 16px; padding: 2px 8px;"
+											placeholder="Address..."
+											required
+										></textarea>
+									</td>
+								</tr>
+
+								<tr>
+									<td align="right">
+										<label for="city">
+											<b>City: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<select
+											name="city"
+											id="city"
+											class="ads_input"
+											style="width: 160px; height: 32px;"
+											required
+										>
+											<option value="" selected disabled>Select a City...</option>
+											<option value="Dhaka">Dhaka</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										<label for="area">
+											<b>Area: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<select
+											name="area"
+											id="area"
+											class="ads_input"
+											style="width: 160px; height: 32px;"
+											required
+										>
+											<option value="" selected disabled>Select an Area...</option>
+											<option value="Dhanmondi">Dhanmondi</option>
+											<option value="Mirpur">Mirpur</option>
+											<option value="Banani">Banani</option>
+											<option value="Uttara">Uttara</option>
+										</select>
+									</td>
+								</tr>
+
+								<tr>
+									<td align="right" style="vertical-align: top;">
+										<label for="details">
+											<b>Details: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<textarea
+											name="details"
+											id="details"
+											cols="80"
+											rows="6"
+											style="width: 80%; font-size: 16px; padding: 2px 8px;"
+											placeholder="Details..."
+											required
+										></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<h1 align="center">
+											<u><i>Contact Information</i></u>
+										</h1>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										<label for="o_name">
+											<b>Name: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<input
+											type="text"
+											name="o_name"
+											id="o_name"
+											value=""
+											style="width: 80%;"
+											placeholder="Name"
+											class="ads_input"
+											required
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										<label for="o_phone">
+											<b>Phone: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<input
+											type="tel"
+											name="o_phone"
+											pattern="[0-9]{11}"
+											maxlength="11"
+											style="width: 80%;"
+											placeholder="Phone Number"
+											class="ads_input"
+											required
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">
+										<label for="o_email">
+											<b>E-mail: <span class="required">*</span></b>
+										</label>
+									</td>
+									<td>
+										<input
+											type="email"
+											name="o_email"
+											id="o_email"
+											value=""
+											style="width: 80%;"
+											placeholder="E-mail"
+											class="ads_input"
+											required
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" align="center">
+										<button type="submit" id="ads_post_button">Post AD</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section id="boxes_footer_top">
+			<div class="container">
+				<div class="box_footer_top">
+					<div>
+						<h3>USEFUL LINKS</h3>
+						<div class="bottom-menu">
+							<ul>
+								<li><a href="aboutus.html">About Us</a></li>
+								<li>
+									<a href="termscondition.html">Terms &amp; Conditions</a>
+								</li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li>
+									<a href="contactus.html">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="box_footer_top">
+					<div>
+						<h3>STAY IN TOUCH</h3>
+						<div>
+							<form>
+								<div>
+									<textarea
+										name="feedback_msg"
+										id="feedback_msg"
+										cols="30"
+										rows="5"
+										placeholder="Your Message..."
+										style="font-size: 15px;"
+										required
+									></textarea>
+									<input
+										type="email"
+										name="feedback_email"
+										id="feedback_email"
+										placeholder="E-mail ... "
+										required
+									/>
+									<button type="submit" name="feedback_button" id="feedback_button">
+										<!-- <i class="fa fa-search fa-sm"></i> -->
+										Feedback
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="social">
+							<ul>
+								<li>
+									<a href="#" target="_blank">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank"><i class="fab fa-google-plus-g"></i> </a>
+								</li>
+								<li>
+									<a href="#" target="_blank">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="box_footer_top">
+					<div>
+						<h3>OFFICE ADDRESS</h3>
+						<div>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<strong>Administration Office</strong><br />
+							<p style="margin-top:5px;">
+								Block A, 1st Floor, Mirpur 12,<br />
+								Dhaka, Bangladesh.
+							</p>
+
+							<i class="fa fa-phone"></i>
+							<label>+88 01714452058</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<p>Copyright &copy; 2019 | All Rights Reserved by Student Accommodation</p>
+			</div>
+		</footer>
+		<script src="../JavaScript/header.js"></script>
+	</body>
+</html>

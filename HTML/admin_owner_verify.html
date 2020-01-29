@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <!-- To Add Icon -->
+ <link rel="stylesheet" href="../icon/fontawesome_icon/css/all.css" />
+ <!-- CSS -->
+ <!-- <link rel="stylesheet" href="../CSS/style.css" /> -->
+ <link rel="stylesheet" href="../CSS/style.css" />
+ <title>Owner Verify</title>
+</head>
+
+<body>
+ <header id="header">
+  <div class="container">
+   <div id="website_logo">
+    <a href="owner_homepage.html">
+     <img src="../images/website_logo.png" alt="Student Accommodation" width="250px" height="70px" id="logo" />
+    </a>
+   </div>
+   <div id="header_navigation">
+    <nav id="header_nav">
+     <ul>
+      <span id="header_nav_list">
+       <li class="current">
+        <a href="admin.html">Home</a>
+       </li>
+       <li id="separator"><b>|</b></li>
+
+       <li>
+        <a href="admin_profile.html">Dashboard</a>
+       </li>
+      </span>
+      <span id="header_logout">
+       <li>
+        <a href="index.html">
+         <i class="fas fa-sign-out-alt fa-lg"></i>
+        </a>
+        <!-- <a href="#">
+         <i class="fas fa-user-circle fa-2x"></i>
+        </a>
+       </li> -->
+       </li>
+      </span>
+     </ul>
+    </nav>
+   </div>
+  </div>
+ </header>
+
+ <section class="owner_verify_section">
+  <div class="container">
+   <div class="verify_details">
+    <div class="left_section">
+     <div>
+      <h1>Owner Details</h1>
+     </div>
+     <div class="left_section_information">
+      <table class="left_section_table">
+       <tr>
+        <td align="right" class="label"><span>Name : </span></td>
+        <td align="left" class="show_data"><span id="name"></span></td>
+       </tr>
+       <tr>
+        <td align="right" class="label"><span>Username : </span></td>
+        <td align="left" class="show_data"><span></span></td>
+       </tr>
+       <tr>
+        <td align="right" class="label"><span>E-mail : </span></td>
+        <td align="left" class="show_data"><span></span></td>
+       </tr>
+       <tr>
+        <td align="right" class="label"><span>Phone : </span></td>
+        <td align="left" class="show_data"><span></span></td>
+       </tr>
+       <tr>
+        <td align="right" class="label"><span>NID : </span></td>
+        <td align="left" class="show_data"><span></span></td>
+       </tr>
+       <tr>
+        <td align="right" class="label"><span>Status : </span></td>
+        <td align="left" class="show_data"><span></span></td>
+       </tr>
+       <tr>
+        <td align="right" class="label"><span>State : </span></td>
+        <td align="left" class="show_data"><span></span></td>
+       </tr>
+       <tr>
+        <td align="right" class="label"><span>Address : </span></td>
+        <td align="left" class="show_data">
+         <address></address>
+        </td>
+       </tr>
+
+       <tr>
+        <td align="right" class="label"><span>Gender : </span></td>
+        <td align="left" class="show_data"><span></span></td>
+       </tr>
+       <tr>
+        <td align="right" class="label"><span>Date of Birth : </span></td>
+        <td align="left" class="show_data">
+         <address></address>
+        </td>
+       </tr>
+       <tr>
+        <td align="right" class="label"><span>Religion : </span></td>
+        <td align="left" class="show_data"><span></span></td>
+       </tr>
+      </table>
+     </div>
+     <div class="left_section_button">
+      <button name="approve" class="btn approve_btn">Approve</button>
+      <button name="disapprove" class="btn disapprove_btn">
+       Disapprove
+      </button>
+      <button name="delete" class="btn delete_btn">Delete</button>
+     </div>
+    </div>
+    <div class="right_section">
+     <div class="right_section_button">
+      <button name="all" class="btn all_btn">All</button>
+      <button name="verified" class="btn verified_btn">Verified</button>
+      <button name="unverified" class="btn unverified_btn">Unverified</button>
+      <button name="deleted" class="btn delete_btn">Deleted</button>
+     </div>
+     <div class="right_section_information">
+      <table class="right_section_table" id="right_section_table">
+       <thead>
+        <tr>
+         <th class="ads_id">Owner ID</th>
+         <th class="ads_title">Name</th>
+         <th class="ads_status">Status</th>
+         <th class="ads_state">State</th>
+        </tr>
+       </thead>
+       <!-- Ajaira data -->
+       <tr>
+        <td class="ads_id">Owner ID1</td>
+        <td class="ads_title">Name1</td>
+        <td class="ads_status">Status1</td>
+        <td class="ads_state">State1</td>
+       </tr>
+       <tr>
+        <td>Owner ID2</td>
+        <td>Name2</td>
+        <td>Status2</td>
+        <td>State2</td>
+       </tr>
+       <tr>
+        <td>Owner ID3</td>
+        <td>Name3</td>
+        <td>Status3</td>
+        <td>State3</td>
+       </tr>
+       <tr>
+        <td>Owner ID4</td>
+        <td>Name4</td>
+        <td>Status4</td>
+        <td>State4</td>
+       </tr>
+       <tr>
+        <td>Owner ID5</td>
+        <td>Name5</td>
+        <td>Status5</td>
+        <td>State5</td>
+       </tr>
+       <tr>
+        <td>Owner ID6</td>
+        <td>Name6</td>
+        <td>Status6</td>
+        <td>State6</td>
+       </tr>
+       <!-- ajaira data end -->
+      </table>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <footer>
+  <div class="container">
+   <p>
+    Copyright &copy; 2019 | All Rights Reserved by Student Accommodation
+   </p>
+  </div>
+ </footer>
+
+ <script src="../JavaScript/header.js"></script>
+ <script>
+  var table = document.getElementById("right_section_table");
+
+  for (var i = 1; i < table.rows.length; i++) {
+   table.rows[i].onclick = function () {
+    //rIndex = this.rowIndex;
+    var adsId = this.cells[0].innerHTML;
+    alert(adsId);
+   };
+  }
+ </script>
+</body>
+
+</html>
